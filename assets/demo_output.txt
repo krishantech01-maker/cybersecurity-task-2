@@ -1,0 +1,36 @@
+Microsoft Windows [Version 10.0.26300.9550]
+(c) Microsoft Corporation. All rights reserved.
+
+
+C:\Users\krishan kumar>F:\'cybersecurity-task-2'
+'F:\'cybersecurity-task-2'' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\krishan kumar>F:
+
+
+F:\>cd "\cybersecurity-task-2"
+
+F:\cybersecurity-task-2>pip install -r requirements.txt
+Collecting bcrypt==4.2.0 (from -r requirements.txt (line 1))
+  Downloading bcrypt-4.2.0-cp39-abi3-win_amd64.whl.metadata (9.9 kB)
+Downloading bcrypt-4.2.0-cp39-abi3-win_amd64.whl (151 kB)
+Installing collected packages: bcrypt
+Successfully installed bcrypt-4.2.0
+
+[notice] A new release of pip is available: 26.1.2 -> 26.2.1
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+F:\cybersecurity-task-2>python src/password_hasher.py
+--- Secure Password Hashing Demo ---
+Enter a password to store securely: Krishan@2005
+
+[SUCCESS] Stored Hash in Database:
+$2b$12$ITs6kpA3fmk7Sw0PGZuLTe9fLF9uRsalgET6T4jo/f9255c525j2i
+
+--- Simulating Login Attempt ---
+Enter password to log in: Krishan@2005
+
+[SUCCESS] Access Granted! Password matched the secure hash.
+
+F:\cybersecurity-task-2>
